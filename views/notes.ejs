@@ -1,0 +1,32 @@
+<%- include("./nav") %>
+    <div class="glob">
+        <h1 class="title-w">Title</h1>
+        <h1 class="time-w">Created At</h1>
+        <h1 class="desc-w">Description</h1>
+        <h1 class="action-w">Actions</h1>
+    </div>
+    <% note.forEach((note)=>{ %>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-txt">
+                    <h5 class="card-title">
+                        <%= note.title%>
+                    </h5>
+                    <p class="text-gray">
+                        <%= note.createdAt.toLocaleDateString() %>
+                    </p>
+                    <p class="card-text">
+                        <%= note.desc %>
+                    </p>
+                </div>
+                <div class="buttons">
+                    <div class="ed">
+                        <a href="/todo/edit/<%= note._id %>" class="btn-edit">Edit <i class="fas fa-edit"></i></a>
+                    </div>
+                    <form action="/todo/delete/<%= note._id %>?_method=DELETE" method="POST">
+                        <button class="del-btn" type="submit">Delete <i class="fas fa-trash"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <% }) %>

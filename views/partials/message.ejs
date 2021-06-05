@@ -1,0 +1,12 @@
+<% if(typeof regError !='undefined' ){ %>
+    <% regError.forEach((error)=>{ %>
+        <p style="width: 100%; text-align: center; color: red;">
+            <%= error.msg %>
+        </p>
+        <% }) %>
+            <% } %>
+                <% if(typeof error !='undefined' ){ %>
+                    <p style="width: 100%; text-align: center; color: red;">
+                        <%= error %>
+                    </p>
+                    <% } %>

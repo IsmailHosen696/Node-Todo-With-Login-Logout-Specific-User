@@ -1,0 +1,144 @@
+.add-container {
+  width: 40rem;
+  box-shadow: 0px 0px 11px -7px rgba(0, 0, 0, 0.96);
+  margin: 3em auto;
+  border-radius: 5px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+.title {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 2em auto 2em auto;
+}
+.ad-h1 {
+  margin-top: 0.5em;
+}
+.desc {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em auto 2em auto;
+}
+#title {
+  width: 100%;
+  margin: 0.5em 0 0.5em 0;
+  height: 2.5em;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+}
+#desc {
+  width: 100%;
+  resize: none;
+  height: 5em;
+  outline: none;
+  margin: 0.5em 0 0.5em 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 10px;
+}
+.add-btn {
+  width: 82%;
+  height: 1.5em;
+  font-size: 1.5em;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 0, 62, 0.884);
+  left: 2.8em;
+  bottom: 1em;
+  border-radius: 5px;
+}
+.can {
+  width: 20%;
+  position: absolute;
+  margin-left: 45%;
+}
+.can-btn {
+  text-decoration: none;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  padding: 1em 3em;
+}
+@media screen and (max-width: 984px) {
+  .add-btn {
+    left: 2.5em;
+  }
+  .can {
+    margin-left: 42%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .add-container {
+    width: 35rem;
+  }
+  .add-btn {
+    left: 2.5em;
+  }
+  .can {
+    margin-left: 40%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .add-container {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .add-btn {
+    left: 2.3em;
+  }
+  .add-container {
+    width: 25rem;
+  }
+  .can {
+    margin-left: 35%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #desc,
+  #title {
+    width: 90%;
+  }
+  .add-container {
+    width: 23rem;
+  }
+  .add-btn {
+    left: 1.6em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .add-container {
+    width: 20rem;
+  }
+  .can-btn {
+    padding: 0.5em 2em;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .add-btn {
+    width: 4em;
+  }
+  .add-container {
+    width: 17rem;
+  }
+  .can {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 280px) {
+  .add-container {
+    width: 100%;
+  }
+  .can {
+    margin-left: 25%;
+  }
+}

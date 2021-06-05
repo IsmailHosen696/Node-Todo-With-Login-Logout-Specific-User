@@ -1,0 +1,22 @@
+<form method="POST" action="/todo/addtodos">
+    <div class="add-container">
+        <h1 class="ad-h1">Add Todo</h1>
+        <div class="userId" style="position: absolute; left: -11111px;">
+            <label for="userId">Title</label>
+            <input required type="text" placeholder="Add Todo Title Here..." value="<%= user.id %>" name="userId"
+                id="userId">
+        </div>
+        <div class="title">
+            <label for="title">Title</label>
+            <input required type="text" placeholder="Add Todo Title Here..." name="title" id="title">
+        </div>
+        <div class="desc">
+            <label for="desc">Description</label>
+            <textarea required placeholder="Add Todo Description Here..." name="desc" id="desc"></textarea>
+        </div>
+        <button class="add-btn" type="submit">Add</button>
+    </div>
+</form>
+<div class="can">
+    <a href="/todo/notes/<%= user.id %>" class="can-btn">Cancel</a>
+</div>

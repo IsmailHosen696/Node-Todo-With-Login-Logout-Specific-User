@@ -1,0 +1,24 @@
+<form method="POST" action="/todo/edit/<%= note.id%>?_method=PATCH">
+    <div class="add-container">
+        <h1 class="ad-h1">Add Todo</h1>
+        <div class="userId" style="display: none;">
+            <label for="userId">userId</label>
+            <input readonly required type="text" value="<%= note.userId%>" placeholder="Add Todo userId Here..."
+                name="userId" id="title">
+        </div>
+        <div class="title" style="margin-bottom: 0;">
+            <label for="title">Title</label>
+            <input required type="text" value="<%= note.title%>" placeholder="Add Todo Title Here..." name="title"
+                id="title">
+        </div>
+        <div class="desc">
+            <label for="desc">Description</label>
+            <textarea required placeholder="Add Todo Description Here..." name="desc"
+                id="desc"><%= note.desc %></textarea>
+        </div>
+        <button class="add-btn" type="submit">Add</button>
+    </div>
+</form>
+<div class="can">
+    <a href="/todo/notes/<%= note.userId %>" class="can-btn">Back</a>
+</div>
